@@ -33,7 +33,7 @@ export const Projectreveal1 = (props) => {
             transition={{duration:0.5}} className="text-start"
             >
                 <a href={props.link} className="text-[25px] mb-2">{props.projectName}</a>
-                <p className="font-light">{props.description}</p>
+                <p className="font-thin">{props.description}</p>
             </motion.div>
         </div>
     </div>
@@ -53,7 +53,7 @@ export const Projectreveal2 = (props) => {
             className="text-end"
             >
             <a href={props.link} className="text-[25px] mb-2">{props.projectName}</a>
-            <p className="font-light">{props.description}</p>
+            <p className="font-thin">{props.description}</p>
             </motion.div>
         </div>
         <div className="col-span-1 col-start-4 flex items-center justify-end "><Imagebox/></div>
