@@ -43,10 +43,10 @@ function App() {
         <Projectreveal1 projectName="Turf Booking App" 
         description="Learned how to create backend with firebase (backend as a service) and solved a real-world problem." 
         link="https://fir-tut-f4eff.firebaseapp.com/"/>
-      </div>)
+      </div>
 
       <Footer/>
-    </div>
+    </div>)
     </>
   );
 }
