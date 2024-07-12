@@ -32,13 +32,13 @@ function App() {
         description="A desktop web application for preparing your own flashcards and practicing with them. Frontend developed using react and backend with node js using MongoDB as database." 
         link="https://flash-cards-frontend.vercel.app/"/>
         <Projectreveal2 projectName="Quibble" 
-        description="A discord bot developed using python and discord developer API , which could fetch weather data of any place using weather API services. Multiplayer games like tic-tac-toe and more features are also available." 
+        description="A discord bot developed using python and discord developer API , which supports 2-Player games and could fetch weather using weather API services. Learned some new ideas on creating game instances and managing these instances when a user reacts to the bot's message." 
         link="https://discord.com/oauth2/authorize?client_id=1247624200655601686&permissions=843961281600&scope=bot"/>
         <Projectreveal1 projectName="ShadowLeet" 
-        description=" A web extension developed using chrome developer API and CSS that enables a dark mode for leetcode contest page which had a basic color scheme along with being light mode."
+        description=" A web extension that enables a dark mode for leetcode contest page using CSS injection using jQuery and chrome developer API."
         link="https://github.com/geekeeeee/ShadowLeet"/>
         <Projectreveal2 projectName="MovieBase App" 
-        description="A project we developed as part of our DBMS course curriculum. Spearheaded the frontend part for this project. Learned Tailwind CSS from this project." 
+        description="A project developed as part of our DBMS course curriculum. Spearheaded the frontend part for this project. Stunning Frontend UI created using ReactJS and taiwindCSS." 
         link="https://moviebase-70706.web.app/"/>
         <Projectreveal1 projectName="Turf Booking App" 
         description="Learned how to create backend with firebase (backend as a service) and solved a real-world problem." 
