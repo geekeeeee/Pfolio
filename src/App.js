@@ -15,9 +15,9 @@ function App() {
   
   return (
     <>
-    animationLoaded&&(<Useanimate setLoading={setAnimationLoaded} />)
+    {animationLoaded&&(<Useanimate setLoading={setAnimationLoaded} />)}
     
-    !animationLoaded && (<div className='main bg-slate-900 flex flex-col  min-h-screen w-auto items-center text-white justify-center font-mons scroll scroll-smooth scrollbar-hide'>
+    <div className='main bg-slate-900 flex flex-col  min-h-screen w-auto items-center text-white justify-center font-mons scroll scroll-smooth scrollbar-hide'>
       <motion.div 
         className="bg-green-400 sticky top-0 w-full h-[10px] origin-center z-10 rounded-full 
         drop-shadow-md"
@@ -46,7 +46,7 @@ function App() {
       </div>
 
       <Footer/>
-    </div>)
+    </div>
     </>
   );
 }
