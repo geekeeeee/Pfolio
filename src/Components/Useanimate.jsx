@@ -40,7 +40,7 @@ const Useanimate = ({setLoading}) => {
     await animate("#par", {
       scale: 0,
       opacity: 0
-    }, {duration: 0.5,type: "backInOut"})
+    }, {duration: 0.35,type: "backInOut"})
     // await 
     setLoading(false);
   }
