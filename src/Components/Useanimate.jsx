@@ -45,8 +45,8 @@ const Useanimate = ({setLoading}) => {
     setLoading(false);
   }
   return (
-    <div ref={scope} >
-      <div id="par" className='w-screen h-screen bg-slate-900 flex items-center justify-center fixed top-0 right-0 z-50'>
+    <div ref={scope} className="m-0 p-0">
+      <div id="par" className='w-screen h-screen bg-slate-900 flex items-center justify-center fixed top-0 right-0 p-0 m-0 z-50'>
         {/* <button onClick={introAnimate} className='bg-transparent text-green-400 fixed top-5'>Start</button> */}
         <motion.div
         id="target1" className="fixed top-[vh] text-green-400 h-[300px] w-[300px] bg-transparent text-6xl font-mons font-bold flex items-center justify-center"
