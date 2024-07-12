@@ -37,51 +37,56 @@ const Useanimate = ({setLoading}) => {
       scale:0.85,
       opacity: 0
     }, {duration: 0.5,type: "backInOut"})
-    
+    await animate("#par", {
+      scale: 0,
+      opacity: 0
+    }, {duration: 0.5,type: "backInOut"})
     // await 
     setLoading(false);
   }
   return (
-    <div ref={scope} className='w-screen h-screen bg-slate-900 flex items-center justify-center fixed top-0 right-0 z-50'>
-      {/* <button onClick={introAnimate} className='bg-transparent text-green-400 fixed top-5'>Start</button> */}
-      <motion.div
-      id="target1" className="fixed top-[vh] text-green-400 h-[300px] w-[300px] bg-transparent text-6xl font-mons font-bold flex items-center justify-center"
-      style= 
-      {{
-          rotateX: "0deg",
-          transformZ: "10px",
-          transformStyle: "preserve-3d",
-      }}
-      animate={introAnimate}
-      >
-        Create
-      </motion.div>
-
-      <motion.div
-      id="target2" className="fixed top-[vh] text-green-400 h-[300px] w-[300px]  bg-transparent text-6xl font-mons font-bold flex items-center justify-center"
-      style= 
-      {{
-          rotateX: "90deg",
-          transformZ: "10px",
-          transformStyle: "preserve-3d",
-      }}
-      >
-        Inspire
-      </motion.div>
-      
-      <motion.div
-      id="target3" className="fixed top-[vh] text-green-400 h-[300px] w-[300px]  bg-transparent text-6xl font-mons font-bold flex items-center justify-center"
-      style= 
-      {{
-          // transformOrigin: "bottom",
-          rotateX: "90deg",
-          transformZ: "10px",
-          transformStyle: "preserve-3d",
-      }}
-      // whileInView={}
-      >
-        Repeat
-      </motion.div>
+    <div ref={scope} >
+      <div id="par" className='w-screen h-screen bg-slate-900 flex items-center justify-center fixed top-0 right-0 z-50'>
+        {/* <button onClick={introAnimate} className='bg-transparent text-green-400 fixed top-5'>Start</button> */}
+        <motion.div
+        id="target1" className="fixed top-[vh] text-green-400 h-[300px] w-[300px] bg-transparent text-6xl font-mons font-bold flex items-center justify-center"
+        style= 
+        {{
+            rotateX: "0deg",
+            transformZ: "10px",
+            transformStyle: "preserve-3d",
+        }}
+        animate={introAnimate}
+        >
+          Create
+        </motion.div>
+  
+        <motion.div
+        id="target2" className="fixed top-[vh] text-green-400 h-[300px] w-[300px]  bg-transparent text-6xl font-mons font-bold flex items-center justify-center"
+        style= 
+        {{
+            rotateX: "90deg",
+            transformZ: "10px",
+            transformStyle: "preserve-3d",
+        }}
+        >
+          Inspire
+        </motion.div>
+        
+        <motion.div
+        id="target3" className="fixed top-[vh] text-green-400 h-[300px] w-[300px]  bg-transparent text-6xl font-mons font-bold flex items-center justify-center"
+        style= 
+        {{
+            // transformOrigin: "bottom",
+            rotateX: "90deg",
+            transformZ: "10px",
+            transformStyle: "preserve-3d",
+        }}
+        // whileInView={}
+        >
+          Repeat
+        </motion.div>
+      </div>
     </div>
   )
 }
